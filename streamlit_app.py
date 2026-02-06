@@ -69,8 +69,7 @@ with st.expander('Chapter Account Balances'):
 with st.expander('At-Large Finances'):
     #st.header("About the dashboard:")
     st.write("This table displays the total income and expenses for PNWSU by year, this information is also reported on our LM forms. You can search for the full LM reports with OLMS at the link below.")
-    if st.button("OLMS Union Search"):
-            webbrowser.open("https://olmsapps.dol.gov/query/getOrgQry.do")
+    st.link_button("OLMS Union Search","https://olmsapps.dol.gov/query/getOrgQry.do")
     st.dataframe(df_pl.set_index(df_pl.columns[0]))
 
 with st.expander('Dues'):
@@ -85,14 +84,13 @@ with st.expander('Resources'):
 
     with colz1:
 
-        if st.button("PNWSU website"):
-            webbrowser.open("https://pnwsu.org")
-    with colz1:
-       
-        if st.button("C&B and CBAs"):
-            webbrowser.open("https://pnwsu.org/resources/")
-    with colz1:
+        st.link_button("PNWSU website","https://pnwsu.org")
 
-        if st.button("Online store"):
-            webbrowser.open("https://pnwsu.myshopify.com/")
+    with colz2:
+       
+        st.link_button("At-Large C&B and CBAs","https://pnwsu.org/resources/")
+    
+    with colz3:
+
+        st.link_button("Online store","https://pnwsu.myshopify.com/")
         
