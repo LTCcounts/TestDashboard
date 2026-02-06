@@ -11,9 +11,9 @@ st.header("Treasurer's Dashboard", divider='gray')
 df = pd.read_csv('data/chapter_bal.csv')
 df_dues = pd.read_csv('data/pnwsu_dues.csv')
 df_pl = pd.read_csv('data/pnwsu_pl.csv')
-with st.expander('About the dashboard'):
+#with st.expander('About the dashboard'):
     #st.header("About the dashboard:")
-    st.write("If you run into any issues or have questions about the data, please email: Treasurer@pnwsu.org.")
+st.caption("If you run into any issues or have questions about the data, please email: Treasurer@pnwsu.org.")
 
 chapters = st.multiselect(
     "Select chapter(s)",
