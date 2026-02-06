@@ -80,19 +80,19 @@ with st.expander('Dues'):
 
 with st.expander('Resources'):
     #st.header("About the dashboard:")
-    st.write("Find other PNWSU content below")
+    st.write("See other PNWSU content below")
     colz1, colz2, colz3 = st.columns(3)
 
     with colz1:
-
+        st.markdown(["PNWSU website"]("https://pnwsu.org"))
         if st.button("PNWSU website"):
             webbrowser.open("https://pnwsu.org")
     with colz1:
-       
+        st.markdown(["At-Large C&B and Chapter CBAs"]("https://pnwsu.org/resources/"))
         if st.button("C&B and CBAs"):
             webbrowser.open("https://pnwsu.org/resources/")
     with colz1:
-
+        st.markdown(["Online Store"]("https://pnwsu.myshopify.com/"))
         if st.button("Online store"):
             webbrowser.open("https://pnwsu.myshopify.com/")
         
