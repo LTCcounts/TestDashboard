@@ -8,7 +8,7 @@ import webbrowser
 #st.image("data/brush_no_landscape.png")
 st.image("data/border_brush.png")
 st.header("Treasurer's Dashboard", divider='gray')
-
+st.write("This page is under development.")
 df = pd.read_csv('data/chapter_bal.csv')
 df_dues = pd.read_csv('data/pnwsu_dues.csv')
 df_pl = pd.read_csv('data/pnwsu_pl.csv')
