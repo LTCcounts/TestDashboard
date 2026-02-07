@@ -44,7 +44,7 @@ df_dues_filtered = df_dues[(df_dues["Chapter"].isin(chapters)) & (df_dues["Year"
 
 with st.expander('At-Large Finances'):
     #st.header("About the dashboard:")
-    st.write("This table displays the total income and expenses for PNWSU by year, this information is also reported on our LM forms. You can search for the full LM reports with OLMS at the link below.")
+    st.write("This table displays the total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with OLMS at the link below.")
     st.link_button("OLMS Union Search","https://olmsapps.dol.gov/query/getOrgQry.do")
     st.dataframe(df_pl.set_index(df_pl.columns[0]))
 
