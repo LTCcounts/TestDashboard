@@ -51,7 +51,7 @@ with st.expander('At-Large Finances'):
 with st.expander('Chapter Account Balances'):
     #st.header("About the dashboard:")
     st.write("These records reflect account balances presented at monthly e-board meetings, and so offer a snapshot of account balances over time.")
-    st.write("Last updated: 2/6/2026")
+    st.write("Last updated: 1/22/2026")
     st.dataframe(df_filtered.set_index(df.columns[0]))
   
     col1, col2 = st.columns(2)
