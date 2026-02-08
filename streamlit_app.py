@@ -5,8 +5,7 @@ from pathlib import Path
 from numpy.random import default_rng as rng
 import webbrowser
 
-#st.image("data/brush_no_landscape.png")
-st.image("data/border_brush.png")
+st.image("data/skyline4.png")
 st.header("Treasurer's Dashboard", divider='gray')
 st.write("This page is under development.")
 df = pd.read_csv('data/chapter_bal.csv')
