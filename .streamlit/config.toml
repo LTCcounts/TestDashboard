@@ -1,0 +1,14 @@
+[secrets]
+
+files = [ "~/.streamlit/secrets.toml"]
+#"~/project directory/.streamlit/secrets.toml"
+showErrorDetails = "none"
+
+[client]
+showErrorDetails = "none"
+
+[theme]
+primaryColor = "3C8F50"
+backgroundColor = "black"
+secondaryBackgroundColor = "black"
+textColor = "white"
