@@ -1,11 +1,8 @@
-[client]
-showErrorDetails = "none"
+[secrets]
+files = ["workspaces/TestDashboard/.streamlit/secrets.toml"]
 
 [theme]
 primaryColor = "3C8F50"
 backgroundColor = "black"
 secondaryBackgroundColor = "2E2E2E"
 textColor = "white"
-
-[secrets]
-files = ["workspaces/TestDashboard/.streamlit/secrets.toml"]
