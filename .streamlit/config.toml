@@ -8,4 +8,4 @@ secondaryBackgroundColor = "2E2E2E"
 textColor = "white"
 
 [secrets]
-files = [ "~/.streamlit/secrets.toml", "~/project directory/.streamlit/secrets.toml"]
+files = [ "~/.streamlit/secrets.toml"]
