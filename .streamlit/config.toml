@@ -10,5 +10,5 @@ showErrorDetails = "none"
 [theme]
 primaryColor = "3C8F50"
 backgroundColor = "black"
-secondaryBackgroundColor = "black"
+secondaryBackgroundColor = "2E2E2E"
 textColor = "white"
