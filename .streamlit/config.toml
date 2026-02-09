@@ -1,5 +1,5 @@
 [secrets]
-files = ["workspaces/TestDashboard/.streamlit/secrets.toml"]
+files = [".streamlit/secrets.toml"]
 
 [theme]
 primaryColor = "3C8F50"
