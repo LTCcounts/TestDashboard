@@ -5,6 +5,14 @@ from pathlib import Path
 from numpy.random import default_rng as rng
 import webbrowser
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
 def check_password():
     """Returns `True` if the user had the correct password."""
     def password_entered():
