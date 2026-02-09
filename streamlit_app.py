@@ -33,7 +33,7 @@ if check_password():
     # ... rest of your app ...
     st.image("data/WUWskyline2.png")
     st.header("Treasurer's Dashboard", divider='gray')
-    st.write("This page is under development.")
+    #st.write("This page is under development.")
    
 
 
