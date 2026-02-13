@@ -43,7 +43,7 @@ if check_password():
     df_pl = pd.read_csv('data/pnwsu_pl.csv')
     #with st.expander('About the dashboard'):
         #st.header("About the dashboard:")
-    st.caption("If you run into any issues or have questions about the data, please email: Treasurer@pnwsu.org.")
+    st.caption("If you run into any issues, have suggestions for content, or have questions about the data, please email: Treasurer@pnwsu.org.")
 
     chapters = st.multiselect(
         "Select chapter(s)",
@@ -72,13 +72,13 @@ if check_password():
     df_dues_filtered = df_dues[(df_dues["Chapter"].isin(chapters)) & (df_dues["Year"].between(years[0], years[1]))]
 
     with st.expander('At-Large Finances'):
-        #st.header("About the dashboard:")
-        st.write("This table displays the total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with OLMS at the link below.")
-        st.link_button("OLMS Union Search","https://olmsapps.dol.gov/query/getOrgQry.do")
+        st.caption("At-Large account balances:")
+        st.image("data/at_lrg_bal.png")
+        url002 = "https://olmsapps.dol.gov/query/getOrgQry.do"
+        st.markdown("Total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with [OLMS](url002).")
         st.dataframe(df_pl.set_index(df_pl.columns[0]))
 
     with st.expander('Chapter Account Balances'):
-        #st.header("About the dashboard:")
         st.write("These records reflect account balances presented at monthly e-board meetings, and so offer a snapshot of account balances over time.")
         st.write("Last updated: 1/22/2026")
         st.dataframe(df_filtered.set_index(df.columns[0]))
@@ -101,17 +101,16 @@ if check_password():
                 color='Chapter'
             )
     with st.expander('Chapter Dues Rates'):
-        #st.header("About the dashboard:")
-        st.write("Dues rates by chapter. Proportion of general dues that contribute to the at-large General Fund versus the Chapter Fund.")
+        url001 = "https://pnwsu.org/wp-content/uploads/2025/01/PNWSU-Constitution-and-Bylaws-Current-12-16-2024.pdf"
+        st.markdown("Dues are decided upon pursuant to Article 10: Section 1 of the [PNWSU constitution and bylaws](url001).")
+        st.caption("Dues rates by chapter + proportion of general dues that contribute to the at-large General Fund versus the Chapter Fund.")
         st.image("data/ch_dues.png")
 
     with st.expander('Annual Dues Income'):
-        #st.header("About the dashboard:")
         st.write("Total dues income by chapter, by year")
         st.dataframe(df_dues_filtered.set_index(df.columns[0]))
 
     with st.expander('Resources'):
-        #st.header("About the dashboard:")
         st.write("Find other PNWSU content below")
         colz1, colz2, colz3 = st.columns(3)
 
@@ -126,4 +125,42 @@ if check_password():
         with colz3:
 
             st.link_button("Online store","https://pnwsu.myshopify.com/")
-            
+
+with st.expander('Upcoming Events'):
+        url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
+        st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
+with st.expander('Social Media 📸'):
+        st.write("Follow other PNWSU chapters on Instagram")
+        colzz1, colzz2, colzz3, colzz4 = st.columns(4)
+
+        with colzz1:
+
+            st.link_button("Writer's Guild","https://www.instagram.com/indiestaffunion/wgsunion")
+
+        with colzz2:
+        
+            st.link_button("UDW","https://www.instagram.com/udw_staff_union")
+        
+        with colzz3:
+
+            st.link_button("SEIU 2015","https://www.instagram.com/indiestaffunion")
+
+
+        with colzz4:
+
+            st.link_button("BSSU","https://www.instagram.com/bssunion")
+
+
+        zcolz1, zcolz2, zcolz3 = st.columns(3)
+
+        with zcolz1:
+
+            st.link_button("PROTEC17","https://www.instagram.com/pnwsu.protec17")
+
+        with zcolz2:
+        
+            st.link_button("SEIU 221","https://www.instagram.com/pnwsu_sandiego")
+        
+        with zcolz3:
+
+            st.link_button("KIWA","https://www.instagram.com/kiwa.pnwsu")
