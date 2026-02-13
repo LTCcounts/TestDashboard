@@ -16,7 +16,7 @@ def check_password():
 
     if "password_correct" not in st.session_state:
         # First run, show input for password.
-        st.image("data/WUWskyline2.png")
+        st.image("data/header.png")
         st.text_input("Welcome. Please input password to proceed:", type="password", on_change=password_entered, key="password")
         return False
     elif not st.session_state["password_correct"]:
@@ -31,7 +31,7 @@ def check_password():
 if check_password():
     st.caption("Password accepted.")
     # ... rest of your app ...
-    st.image("data/WUWskyline2.png")
+    st.image("data/header.png")
     st.header("Treasurer's Dashboard", divider='gray')
     #st.write("This page is under development.")
    
@@ -100,6 +100,10 @@ if check_password():
                 y='Savings/Strike',
                 color='Chapter'
             )
+    with st.expander('Chapter Dues Rates'):
+        #st.header("About the dashboard:")
+        st.write("Dues rates by chapter. Proportion of general dues that contribute to the at-large General Fund versus the Chapter Fund.")
+        st.image("data/ch_dues.png")
 
     with st.expander('Annual Dues Income'):
         #st.header("About the dashboard:")
