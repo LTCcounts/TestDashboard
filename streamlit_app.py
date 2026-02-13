@@ -126,11 +126,11 @@ if check_password():
 
             st.link_button("Online store","https://pnwsu.myshopify.com/")
 
-with st.expander('Upcoming Events'):
-        url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
-        st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-with st.expander('Social Media 📸'):
-        st.write("Follow other PNWSU chapters on Instagram")
+    with st.expander('Upcoming Events'):
+            url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
+            st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
+    with st.expander('Social Media 📸'):
+            st.write("Follow other PNWSU chapters on Instagram")
         colzz1, colzz2, colzz3, colzz4 = st.columns(4)
 
         with colzz1:
