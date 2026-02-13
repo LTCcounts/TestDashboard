@@ -32,7 +32,7 @@ if check_password():
     st.caption("Password accepted.")
     # ... rest of your app ...
     st.image("data/header.png")
-    st.header("Treasurer's Dashboard", divider='gray')
+    st.header("PNWSU Chapter Resource Hub", divider='gray')
     #st.write("This page is under development.")
    
 
