@@ -75,7 +75,8 @@ if check_password():
         st.caption("At-Large account balances:")
         st.image("data/at_lrg_bal.png")
         url002 = "https://olmsapps.dol.gov/query/getOrgQry.do"
-        st.markdown("Total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with [OLMS](url002).")
+        st.write("Total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with OLMS.")
+        st.link_button("OLMS", url002)
         st.dataframe(df_pl.set_index(df_pl.columns[0]))
 
     with st.expander('Chapter Account Balances'):
@@ -102,7 +103,8 @@ if check_password():
             )
     with st.expander('Chapter Dues Rates'):
         url001 = "https://pnwsu.org/wp-content/uploads/2025/01/PNWSU-Constitution-and-Bylaws-Current-12-16-2024.pdf"
-        st.markdown("Dues are decided upon pursuant to Article 10: Section 1 of the [PNWSU constitution and bylaws](url001).")
+        st.write("Dues are decided upon pursuant to Article 10: Section 1 of the PNWSU constitution and bylaws.")
+        st.link_button("At-Large C&B", url001)
         st.caption("Dues rates by chapter + proportion of general dues that contribute to the at-large General Fund versus the Chapter Fund.")
         st.image("data/ch_dues.png")
 
@@ -128,8 +130,10 @@ if check_password():
 
     with st.expander('Upcoming Events'):
             url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
-            st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-    with st.expander('Social Media 📸'):
+            #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
+            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12. More details forthcoming.") 
+            st.link_button("Registration", url003)
+with st.expander('Social Media 📸'):
         st.write("Follow other PNWSU chapters on Instagram")
         colzz1, colzz2, colzz3, colzz4 = st.columns(4)
 
