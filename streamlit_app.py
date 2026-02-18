@@ -134,6 +134,9 @@ if check_password():
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
             st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12. More details forthcoming.") 
             st.link_button("Registration", url003)
+
+
+      
     with st.expander('Social Media 📸'):
         st.write("Follow other PNWSU chapters on Instagram")
         colzz1, colzz2, colzz3, colzz4 = st.columns(4)
