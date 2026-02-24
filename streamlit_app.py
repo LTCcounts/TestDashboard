@@ -62,8 +62,7 @@ if check_password():
     'UDWU',
     'UFCW367',
     'KIWA',
-    'SEIU 121RN ',
-    'UFCW 21 '
+    'SEIU 121RN'
     ],
     )
 
