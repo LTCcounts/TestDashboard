@@ -137,7 +137,7 @@ if check_password():
     with st.expander('WGSU Strike Fund'):
             url004 = "https://www.gofundme.com/f/wgsustrikefund"
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Support our siblings who are on strike at WGSU!") 
+            st.write("Support our PNWSU siblings who are on strike at WGSU!") 
             st.link_button("WGSU GoFundMe", url004)
       
     with st.expander('Social Media 📸'):
