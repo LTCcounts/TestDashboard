@@ -131,7 +131,7 @@ if check_password():
     with st.expander('Upcoming Events'):
             url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12. More details forthcoming.") 
+            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12. The conference and lodging will be at the DoubleTree by Hilton Hotel Seattle Airport (CTAC) - 18740 International Blvd, Seattle, WA 98188") 
             st.link_button("Registration", url003)
 
     with st.expander('WGSU Strike Fund'):
