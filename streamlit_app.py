@@ -131,8 +131,19 @@ if check_password():
     with st.expander('Upcoming Events'):
             url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12. The conference and lodging will be at the DoubleTree by Hilton Hotel Seattle Airport (CTAC) - 18740 International Blvd, Seattle, WA 98188") 
+            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12.") 
             st.link_button("Registration", url003)
+            st.write("If you've registered already, please check your email for more information regarding travel booking.") 
+            st.write("FAQs")
+            st.write("What is the best airport to fly into?") 
+            st.caption("Seattle-Tacoma International Airport (SEA) is the best airport, the hotel is only a few minutes away.") 
+            st.write("How do I get to the hotel from the airport?") 
+            st.caption("There is an airport shuttle to the hotel.") 
+            st.write("When should I arrive/leave?") 
+            st.caption("There will be rooms available for those arriving on Friday April 10th. The full conference days are April 11 and 12, and goes until 2PM on Sunday.") 
+            st.write("Where is the hotel and conference?") 
+            st.caption("Both are located at the DoubleTree by Hilton Hotel Seattle Airport (CTAC), 18740 International Blvd, Seattle, WA 98188.") 
+
 
     with st.expander('WGSU Strike Fund'):
             url004 = "https://www.gofundme.com/f/wgsustrikefund"
