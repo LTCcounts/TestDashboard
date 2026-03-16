@@ -61,8 +61,7 @@ if check_password():
     'NVLF',
     'UDWU',
     'UFCW367',
-    'KIWA',
-    'SEIU 121RN'
+    'KIWA'
     ],
     )
 
@@ -81,7 +80,7 @@ if check_password():
 
     with st.expander('Chapter Account Balances'):
         st.write("These records reflect account balances presented at monthly e-board meetings, and so offer a snapshot of account balances over time.")
-        st.caption("Last updated: 2/17/2026")
+        st.caption("Last updated: 3/16/2026")
         st.dataframe(df_filtered.set_index(df.columns[0]))
     
         col1, col2 = st.columns(2)
