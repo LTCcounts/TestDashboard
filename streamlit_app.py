@@ -128,11 +128,11 @@ if check_password():
             st.link_button("Online store","https://pnwsu.myshopify.com/")
 
     with st.expander('Upcoming Events'):
-            url003 = "https://docs.google.com/forms/d/e/1FAIpQLSebQzD355S2afDuZrbpHMtvJx7s-xoSu5DymNZTdx-FlFNaSA/viewform"
+            
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Register for the 2026 PNWSU Annual Conference to be held in Seattle, April 10-12.") 
-            st.link_button("Registration", url003)
-            st.write("If you've registered already, please check your email for more information regarding travel booking.") 
+            st.write("Registration is now closed for the 2026 PNWSU Annual Conference. We will see those of you who RSVP'd in Seattle this April 10-12.") 
+         
+            st.write("Please check your email for more information regarding travel booking.") 
             st.write("FAQs")
             st.write("What is the best airport to fly into?") 
             st.caption("Seattle-Tacoma International Airport (SEA) is the best airport, the hotel is only a few minutes away.") 
@@ -156,7 +156,7 @@ if check_password():
 
         with colzz1:
 
-            st.link_button("Writer's Guild","https://www.instagram.com/indiestaffunion/wgsunion")
+            st.link_button("Writer's Guild","https://www.instagram.com/wgsunion")
 
         with colzz2:
         
