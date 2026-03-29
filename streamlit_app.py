@@ -141,7 +141,7 @@ if check_password():
             st.write("When should I arrive/leave?") 
             st.caption("There will be rooms available for those arriving on Friday April 10th. The full conference days are April 11 and 12, and goes until 2PM on Sunday.") 
             st.write("Where is the hotel and conference?") 
-            st.caption("Both are located at the DoubleTree by Hilton Hotel Seattle Airport (CTAC), 18740 International Blvd, Seattle, WA 98188.") 
+            st.caption("Both are located at the Hilton Seattle Airport & Conference Center (SEAAH) | 17620 International Blvd, Seattle, WA 98188. (Please note the address change as of March 29th).") 
 
 
     with st.expander('WGSU Strike Fund'):
