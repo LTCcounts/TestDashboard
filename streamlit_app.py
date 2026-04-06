@@ -139,7 +139,7 @@ if check_password():
             st.write("How do I get to the hotel from the airport?") 
             st.caption("There is an airport shuttle to the hotel.") 
             st.write("When should I arrive/leave?") 
-            st.caption("There will be rooms available for those arriving on Friday April 10th. The full conference days are April 11 and 12, and goes until 2PM on Sunday.") 
+            st.caption("There will be rooms available for those arriving on Friday, April 10th. The full conference days are April 11 and 12, and goes until 2PM on Sunday.") 
             st.write("Where is the hotel and conference?") 
             st.caption("Both are located at the Hilton Seattle Airport & Conference Center (SEAAH) | 17620 International Blvd, Seattle, WA 98188. (Travelers, please note the address change as of March 29th).") 
 
