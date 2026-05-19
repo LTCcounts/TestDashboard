@@ -80,7 +80,7 @@ if check_password():
 
     with st.expander('Chapter Account Balances'):
         st.write("These records reflect account balances presented at monthly e-board meetings, and so offer a snapshot of account balances over time.")
-        st.caption("Last updated: 3/16/2026")
+        st.caption("Last updated: 5/18/2026")
         st.dataframe(df_filtered.set_index(df.columns[0]))
     
         col1, col2 = st.columns(2)
@@ -130,25 +130,14 @@ if check_password():
     with st.expander('Upcoming Events'):
             
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Registration is now closed for the 2026 PNWSU Annual Conference. Please check your email for more information regarding travel booking.") 
-            st.caption("April 10-12 | Hilton Seattle Airport & Conference Center (SEAAH) | 17620 International Blvd, Seattle, WA 98188")
+            st.write("Stay tuned for more upcoming events") 
             
-            st.write("FAQs")
-            st.write("What is the best airport to fly into?") 
-            st.caption("Seattle-Tacoma International Airport (SEA) is the best airport, the hotel is only a few minutes away.") 
-            st.write("How do I get to the hotel from the airport?") 
-            st.caption("There is an airport shuttle to the hotel.") 
-            st.write("When should I arrive/leave?") 
-            st.caption("There will be rooms available for those arriving on Friday, April 10th. The full conference days are April 11 and 12, and goes until 2PM on Sunday.") 
-            st.write("Where is the hotel and conference?") 
-            st.caption("Both are located at the Hilton Seattle Airport & Conference Center (SEAAH) | 17620 International Blvd, Seattle, WA 98188. (Travelers, please note the address change as of March 29th).") 
 
-
-    with st.expander('WGSU Strike Fund'):
-            url004 = "https://www.gofundme.com/f/wgsustrikefund"
+    with st.expander('SEIU 221 Strike Fund'):
+            url004 = "https://www.gofundme.com/f/pnwsu-strike"
             #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Support our PNWSU siblings who are on strike at WGSU") 
-            st.link_button("WGSU GoFundMe", url004)
+            st.write("Support our PNWSU siblings who are on strike at SEIU 221") 
+            st.link_button("SEIU 221 GoFundMe", url004)
       
     with st.expander('Social Media 📸'):
         st.write("Follow other PNWSU chapters on Instagram")
@@ -164,7 +153,7 @@ if check_password():
         
         with colzz3:
 
-            st.link_button("SEIU 2015","https://www.instagram.com/indiestaffunion")
+            st.link_button("At-Large PNWSU","https://www.instagram.com/indiestaffunion")
 
 
         with colzz4:
