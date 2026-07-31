@@ -71,8 +71,15 @@ if check_password():
     df_dues_filtered = df_dues[(df_dues["Chapter"].isin(chapters)) & (df_dues["Year"].between(years[0], years[1]))]
 
     with st.expander('At-Large Finances'):
-        st.caption("At-Large account balances:")
-        st.image("data/at_lrg_bal.png")
+        st.caption("At-Large account balances as of 21 July 2026")
+        #st.image("data/at_lrg_bal.png")
+        GF_matrix = pd.DataFrame(
+            {
+                "Balance": [155240.12, 75383.31, 90435.08, 6740.95]
+            },
+            index=["General Fund", "Reserve", "Strike/Hardship", "Online Store Checking"],
+            )
+        st.table(GF_matrix)
         url002 = "https://olmsapps.dol.gov/query/getOrgQry.do"
         st.write("Total income and expenses for PNWSU by year. This information is also reported on our LM forms. You can search for the full LM reports with OLMS.")
         st.link_button("OLMS", url002)
@@ -133,11 +140,11 @@ if check_password():
             st.write("Stay tuned for more upcoming events") 
             
 
-    with st.expander('SEIU 221 Strike Fund'):
-            url004 = "https://www.gofundme.com/f/pnwsu-strike"
-            #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
-            st.write("Support our PNWSU siblings who are on strike at SEIU 221") 
-            st.link_button("SEIU 221 GoFundMe", url004)
+    #with st.expander('SEIU 221 Strike Fund'):
+    #        url004 = "https://www.gofundme.com/f/pnwsu-strike"
+    #        #st.markdown("Register for the [2026 PNWSU Annual Conference](url003) to be held in Seattle, April 10-12. More details forthcoming.")            
+    #        st.write("Support our PNWSU siblings who are on strike at SEIU 221") 
+    #        st.link_button("SEIU 221 GoFundMe", url004)
       
     with st.expander('Social Media 📸'):
         st.write("Follow other PNWSU chapters on Instagram")
