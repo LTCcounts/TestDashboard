@@ -71,7 +71,7 @@ if check_password():
     df_dues_filtered = df_dues[(df_dues["Chapter"].isin(chapters)) & (df_dues["Year"].between(years[0], years[1]))]
 
     with st.expander('At-Large Finances'):
-        st.caption("At-Large account balances as of 21 July 2026")
+        st.caption("At-Large account balances as of 14 Sept 2026")
         #st.image("data/at_lrg_bal.png")
         GF_matrix = pd.DataFrame(
             {
