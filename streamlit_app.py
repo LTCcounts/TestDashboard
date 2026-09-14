@@ -75,7 +75,7 @@ if check_password():
         #st.image("data/at_lrg_bal.png")
         GF_matrix = pd.DataFrame(
             {
-                "Balance": [155240.12, 75383.31, 90435.08, 6740.95]
+                "Balance": [223536.19, 75396.13, 90450.46, 7115.99]
             },
             index=["General Fund", "Reserve", "Strike/Hardship", "Online Store Checking"],
             )
